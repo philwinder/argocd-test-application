@@ -5,12 +5,12 @@ metadata:
   namespace: argocd
 spec:
   destination:
-    name: ''
+    name: ""
     namespace: test
-    server: 'https://kubernetes.default.svc'
+    server: "https://kubernetes.default.svc"
   source:
     path: nginx-kustomize
-    repoURL: 'git@github.com:philwinder/argocd-test-application.git'
+    repoURL: "https://github.com/philwinder/argocd-test-application.git"
     targetRevision: HEAD
   project: default
   syncPolicy:
